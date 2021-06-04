@@ -6,8 +6,15 @@ import 'package:project/components/rounded_button.dart';
 import 'package:project/components/rounded_input_field.dart';
 import 'package:project/components/rounded_password_field.dart';
 
-class Body extends StatelessWidget {
+class Body extends StatefulWidget {
   @override
+  _BodyState createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  String valueChoose;
+  List listItem = ["Car", "Truck", "Motorcycle"];
+
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Background(
@@ -34,6 +41,32 @@ class Body extends StatelessWidget {
             ),
             RoundedPasswordField(
               onChanged: (value) {},
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Container(
+                padding: EdgeInsets.only(left: 16, right: 16),
+                decoration: BoxDecoration(),
+                child: DropdownButton(
+                  hint: Text("Vehicle type"),
+                  dropdownColor: Colors.grey,
+                  icon: Icon(Icons.arrow_drop_down_circle),
+                  iconSize: 36,
+                  isExpanded: true,
+                  style: TextStyle(color: Colors.black, fontSize: 22),
+                  value: valueChoose,
+                  onChanged: (newValue) {
+                    setState(() {
+                      valueChoose = newValue;
+                    });
+                  },
+                  items: listItem.map((valueItem) {
+                    return DropdownMenuItem(
+                      child: Text(valueItem),
+                    );
+                  }).toList(),
+                ),
+              ),
             ),
             RoundedButton(
               text: "SIGNUP",
