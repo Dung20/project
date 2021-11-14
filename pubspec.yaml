@@ -1,4 +1,4 @@
-name: project
+name: neptune_app
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -18,20 +18,47 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+
   flutter_svg: ^0.22.0
+  meta: ^1.1.0
+  intl: ^0.17.0
+  bloc: ^7.0.0
+  flutter_bloc: ^7.0.0
+  equatable: ^2.0.0
+  firebase_core: ^1.2.0
+  firebase_auth: ^3.1.1
+  firebase_storage: ^10.0.3
+  cloud_firestore: ^2.2.0
+  google_maps_flutter: ^2.0.0
+  http: ^0.13.0
+  place_picker: ^0.9.18
+  location: ^4.1.1
+  flutter_auth_ui: ^2.4.0
+  wakelock: ^0.5.6
+  geoflutterfire: ^3.0.1
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  test: ^1.16.5
+  flutter_native_splash: ^1.2.0
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/splash.png
+  android: true
+  ios: true
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -53,7 +80,12 @@ flutter:
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
   # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
+  # Note: C:\Users\Sahassawat\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\cloud_firestore-2.5.4\android\src\main\java\io\flutter\plugins\firebase\firestore\streamhandler\TransactionStreamHandler.java uses unchecked or unsafe operations.
+      #Note: Recompile with -Xlint:unchecked for details.
+      #Note: C:\Users\Sahassawat\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\google_maps_flutter-2.0.9\android\src\main\java\io\flutter\plugins\googlemaps\Convert.java uses or overrides a deprecated API.
+      #Note: Recompile with -Xlint:deprecation for details.
+    #Note: C:\Users\Sahassawat\AppData\Local\Pub\Cache\hosted\pub.dartlang.org\google_maps_flutter-2.0.9\android\src\main\java\io\flutter\plugins\googlemaps\TileProviderController.java uses unchecked or unsafe operations.
+    #Note: Recompile with -Xlint:unchecked for details.https://flutter.dev/assets-and-images/#from-packages
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a

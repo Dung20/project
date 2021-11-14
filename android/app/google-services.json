@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "8224240939",
+    "project_id": "tripletwo-neptune",
+    "storage_bucket": "tripletwo-neptune.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8224240939:android:6864fc13e73503af81416e",
+        "android_client_info": {
+          "package_name": "th.ac.kmutt.sit.tripletwo.neptune.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8224240939-sr0ucgc5t82vhftv657o1fcu0pdm7iki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "th.ac.kmutt.sit.tripletwo.neptune.app",
+            "certificate_hash": "252ae7dc76e70b07237ed7d46f7fe967b248c934"
+          }
+        },
+        {
+          "client_id": "8224240939-sgdr10473nita4tm74oihna17a3pft8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4GVu3tn9kLIq928gXTfGT-RUq2FULVzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8224240939-sgdr10473nita4tm74oihna17a3pft8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

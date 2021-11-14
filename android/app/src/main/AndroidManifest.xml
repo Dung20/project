@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.project">
+    package="th.ac.kmutt.sit.tripletwo.neptune.app">
    <application
-        android:label="project"
+        android:label="neptune_app"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -37,5 +37,10 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyCGmVc21YMGAOYTxivxQ2-J8govAzCbyqw"/>
     </application>
+    <uses-feature android:name="android.hardware.location.network" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="true"  />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 </manifest>
